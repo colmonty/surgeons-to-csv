@@ -23,7 +23,7 @@ Content-Disposition: form-data; name="inputString"
 '@
 
 $body = $template -F $trimmedContent
-$unescapeUri = "http://www.freeformatter.com/string-escaper.html"
+$unescapeUri = "http://www.freeformatter.com/javascript-escape.html"
 Write-Host "Sending unquoted content to be un-escaped..."
 $escapedResponse = Invoke-WebRequest -Uri $unescapeUri `
                                      -Method Post `
